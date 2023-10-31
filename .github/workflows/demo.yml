@@ -20,7 +20,7 @@ jobs:
       - name: Execute TRCLI Action
         uses: gurock/trcli-action@main
         with:
-          host: 'https://testrail101.testrail.io/'
+          host: 'https://testrailsademo.testrail.io/'
           username: "${{ secrets.TESTRAIL_USERNAME }}"
           password: "${{ secrets.TESTRAIL_PASSWORD }}"
           project: 'GitHub Action Demo'

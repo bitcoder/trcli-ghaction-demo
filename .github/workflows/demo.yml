@@ -18,5 +18,5 @@ jobs:
           password: 'NA'
           project: 'Automation Framework Samples'
           auto_create_cases_yes: 'true'
-          report_file_path: 'reports/junit-report.xml'
+          report_file_path: 'target/surefire-reports/TEST-com.testrail.java.CalcTest.xml'
           title: 'Automated tests'

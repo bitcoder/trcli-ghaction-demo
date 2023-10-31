@@ -17,6 +17,8 @@ jobs:
           distribution: 'adopt'
       - name: Run tests
         run: mvn clean compile test
+      - name: List files
+        run: ls -la
       - name: Execute TRCLI Action
         uses: gurock/trcli-action@main
         with:

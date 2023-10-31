@@ -1,0 +1,22 @@
+on:
+  workflow_dispatch:
+  
+name: TRCLI action experiment
+
+jobs:
+  trcli_action_job:
+    name: TRCLI Action test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Execute TRCLI Action
+        uses: gurock/trcli-action@main
+        with:
+          host: 'https://testrail101.testrail.io/'
+          username: 'trcli@testrail.com'
+          password: 'NA'
+          project: 'Automation Framework Samples'
+          auto_create_cases_yes: 'true'
+          report_file_path: 'reports/junit-report.xml'
+          title: 'Automated tests'
